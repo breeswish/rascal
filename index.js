@@ -11,14 +11,11 @@ var Vhost = require('./lib/amqp/Vhost')
 
 module.exports = (function() {
     return {
-        classes: {
-            Broker: Broker,
-            Publication: Publication,
-            SubscriberSession: SubscriberSession,
-            Subscription: Subscription,
-            Vhost: Vhost
-        },
         Broker: Broker,
+        Publication: Publication,
+        SubscriberSession: SubscriberSession,
+        Subscription: Subscription,
+        Vhost: Vhost,
         createBroker: Broker.create,
         defaultConfig: defaultConfig,
         testConfig: testConfig,
